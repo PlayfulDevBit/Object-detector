@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Object Detector</h1>
+        <p>Upload an image to detect objects.</p>
+        <label class="upload-btn">
+            Choose Image
+            <input type="file" id="imageInput" accept="image/*">
+        </label>
+        <div class="status" id="status">Loading...</div>
+        <img id="image" style="display:none;">
+        <canvas id="canvas"></canvas>
+        <div id="output"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@latest"></script>
+    <script src="app.js"></script>
+</body>
+</html>
